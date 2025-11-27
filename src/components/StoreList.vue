@@ -120,7 +120,7 @@
               <h1 :id="store.row.uuid">{{ store.row.id }} <a :href="store.row.reference" style="font-size: 11pt; font-weight: normal; padding-left: .75rem;">Link</a></h1>
               <p>
                 Download this Green's Function store with
-                <code class="select-all">fomosto download kinherd {{store.row.id}}</code>
+                <code class="select-all">fomosto download pyrocko {{store.row.id}}</code>
               </p>
 
               <table style="max-width: 650px">
@@ -187,7 +187,7 @@ export default {
   data () {
     return {
       api_endpoint: 'https://greens-mill.pyrocko.org/api/',
-      static_endpoint: 'http://kinherd.org:8080/gfws/static/',
+      static_endpoint: 'https://gf.pyrocko.org/gfws/static/',
       isEmpty: true,
       data: undefined,
       modalData: undefined,
